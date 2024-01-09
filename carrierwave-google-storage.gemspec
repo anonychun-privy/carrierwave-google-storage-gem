@@ -5,14 +5,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'carrierwave/google/storage/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'carrierwave-google-storage'
+  spec.name          = 'privy-carrierwave-google-storage'
   spec.version       = Carrierwave::Google::Storage::VERSION
-  spec.authors       = ['Jasdeep Singh']
-  spec.email         = ['narang.jasdeep@gmail.com']
+  spec.authors       = ['Achmad Chun Chun']
+  spec.email         = ['anonychun@gmail.com']
 
   spec.summary       = %q(Use gcloud for Google Cloud Storage support in Carrierwave.)
   spec.description   = %q(A slimmer alternative to using Fog for Google Cloud Storage support in Carrierwave. Heavily inspired from carrierwave-aws)
-  spec.homepage      = 'https://github.com/metaware/carrierwave-google-storage'
+  spec.homepage      = 'https://github.com/privy-ruby/carrierwave-google-storage-gem'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

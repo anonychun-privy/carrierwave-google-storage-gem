@@ -4,18 +4,17 @@
 [![Code Climate](https://codeclimate.com/github/metaware/carrierwave-google-storage/badges/gpa.svg)](https://codeclimate.com/github/metaware/carrierwave-google-storage)
 [![Gem Version](https://badge.fury.io/rb/carrierwave-google-storage.svg)](https://badge.fury.io/rb/carrierwave-google-storage)
 
-Use the official `google-cloud` gem by Google for Google Cloud Storage, instead of Fog. 
+Use the official `google-cloud` gem by Google for Google Cloud Storage, instead of Fog.
 
 - No need to activate Interoperable Access on your project.
 - Rely on Google's preferred authentication mechanism. ie: Service Accounts.
- 
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'carrierwave-google-storage'
+gem 'privy-carrierwave-google-storage'
 ```
 
 ## Rails Compatibility:
@@ -33,11 +32,11 @@ CarrierWave.configure do |config|
   config.gcloud_bucket_is_public             = true
   config.gcloud_authenticated_url_expiration = 600
   config.gcloud_content_disposition          = 'attachment' // or you can skip this
-  
+
   config.gcloud_attributes = {
     expires: 600
   }
-  
+
   config.gcloud_credentials = {
     gcloud_project: 'gcp-project-name',
     gcloud_keyfile: 'path-to-gcp-keyfile.json'
@@ -55,11 +54,11 @@ end
 
 ## How to get the Keyfile?
 
-To generate a new keyfile, perform the following steps: 
+To generate a new keyfile, perform the following steps:
 
 - Go to [Cloud Console > API Manager > Credentials](https://console.cloud.google.com/apis/credentials)
 - Click Create Credentials > Service Account Key
-- Service Account > New Service Account 
+- Service Account > New Service Account
 - Give any name for "Service Account Name"
 - Set Key type to JSON
 - Click "Create"
@@ -91,7 +90,7 @@ You get extra attention, if your PR includes specs/tests.
 - Bug fixes should ideally include exposing specs/tests.
 - Commit your changes ($ git commit -am 'Add some feature')
 - Push to the branch ($ git push origin my-new-feature)
-- Open your Pull Request! 
+- Open your Pull Request!
 
 ## License
 
