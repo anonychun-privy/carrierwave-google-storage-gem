@@ -1,1 +1,1 @@
-require 'carrierwave/google/storage'
+require 'carrierwave-google-storage'
